@@ -1,0 +1,102 @@
+.header{
+    background: rgb(1, 78, 86);
+    padding: 40px 0;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3{
+            font-size: 25px;
+            color: $bg-light;
+            padding-right: 60px;
+        }
+        .fa-xmark{
+            display: none;
+            @media (max-width:650px) {
+                display: block;
+                margin-left: auto;
+            }
+        }
+        &__collection{
+            flex: 1;
+            display: flex;
+            color: $bg-light;
+            gap: 40px;
+            align-items: center;
+            li{
+                transition: .25s;
+                &:active{
+                    color: $bg-sy;
+                    transform: scale(0.9);
+                }
+            }
+            li:nth-child(3){
+                margin-right: auto;
+                transition: .25s;
+                &:active{
+                    transform: scale(0.9);
+                    color: $bg-sy;
+                }
+            }
+            li:last-child{
+                flex: -1;
+            }
+            
+            @media (max-width:650px) {
+                display: flex;
+                position: fixed;
+                align-items: center;
+                justify-content: flex-start;
+                top: 0;
+                right: -350px;
+                width: 250px;
+                height: 600px;
+                padding: 30px ;
+                background: $bg-py ;
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.56);
+                flex-direction: column;
+                transition: .5s;
+                li:nth-child(2){
+                    margin-right: auto;
+                }
+            }
+        }
+        .show{
+            right: 0;
+        }
+        button{
+            background: transparent;
+            color: $bg-light;
+            font-weight: 600;
+            width: 138px;
+            height: 40px;
+            border: 2px solid $bg-light;
+            border-radius: 50px;
+            transition: .25s;
+            &:hover{
+                background: $bg-light;
+                color: $bg-dark;
+                cursor: pointer;
+            }
+            &:active{
+                transform: translate(5px, 4px);
+            }
+            
+        }
+        &__menu{
+            display: none;
+            @media (max-width:650px) {
+                display: block;
+                span{
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background: #fff;
+                    margin-bottom: 3px;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+    }
+}
