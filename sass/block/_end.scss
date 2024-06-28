@@ -1,0 +1,41 @@
+.end{
+    background: $bg-pink;
+    width: 100%;
+    &__title{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:650px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        p{
+            font-size: 45px;
+            font-weight: 700;
+            color: $bg-dark;
+        }
+        button{
+            background: transparent;
+            color: $bg-dark;
+            font-weight: 600;
+            width: 138px;
+            height: 40px;
+            border: 2px solid $bg-dark;
+            border-radius: 50px;
+            transition: .25s;
+            &:hover{
+                background: $bg-dark;
+                color: $bg-light;
+                cursor: pointer;
+            }
+            &:active{
+                transform: translate(5px, 4px);
+            }
+            
+        }
+    }
+}

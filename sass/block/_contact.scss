@@ -1,0 +1,81 @@
+.contact{
+    background: $bg-py;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2{
+        font-size: 64px;
+        font-weight: 700;
+        color: $bg-light;
+    }
+    p{
+        padding-top: 50px;
+        font-size: 32px;
+        font-weight: 700;
+        color: $bg-pink;
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       @media (max-width:950px) {
+            display: flex;
+            flex-direction: column;
+            gap: 170px;
+       }
+    }
+    &__collection{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        p{
+            font-size: 18px;
+            color: $bg-light;
+        }
+        img{
+            width: 72px;
+            height: 72px;
+        }
+    }
+    &__about{
+        margin-top: -100px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        @media (max-width:950px) {
+            width: 100%;
+        }
+        input{
+            outline:none ;
+            background: transparent;
+            border: none;
+            margin-bottom: 20px;
+
+            &::placeholder{
+                color: $bg-light;
+            }
+        }
+        button{
+            width: 160px;
+            height: 50px;
+            background: $bg-light;
+            color: $bg-dark;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            border: none;
+            &:hover{
+                background: $bg-dark;
+                color: $bg-light;
+                cursor: pointer;
+            }
+        }
+    }
+}

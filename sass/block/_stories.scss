@@ -1,0 +1,58 @@
+.stories{
+    background-color: $bg-py;
+    padding-top: 50px;
+    &__title{
+        text-align: center;
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            color: $bg-light;
+            @media (max-width:650px) {
+                font-size: 30px;
+            }
+        }
+        .green{
+            color: $bg-sy;
+        }
+    }
+    &__wrapper{
+        margin-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width:950px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+        @media (max-width:950px) {
+            width: 100%;
+        }
+        img{
+            width: 67px;
+            height: 56px;
+        }
+       
+        .text{
+           margin-top: -20px;
+           display: flex;
+           gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            color: $bg-light;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .green{
+            color: $bg-sy;
+        }
+    }
+}

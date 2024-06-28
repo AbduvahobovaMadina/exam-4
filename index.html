@@ -13,9 +13,9 @@
             <nav class="navbar">
                 <h3>myteam</h3>
                 <ul class="navbar__collection">
-                    <i onclick="hideSidebar()" class="fa-solid fa-xmark"></i>
-                    <li><a href="#"><p>about</p></a></li>
-                    <li><a href="#"><p>home</p></a></li>
+                    <i onclick="toggleShow()" class="fa-solid fa-xmark"></i>
+                    <li><a target="_blank" href="./pages/home.html"><p>home</p></a></li>
+                    <li><a target="_blank" href="./pages/about.html"><p>about</p></a></li>
                     <li><button>contact us</button></li>
                 </ul>
                 <div onclick="toggleShow()" class="navbar__menu">
@@ -24,10 +24,132 @@
                     <span></span>
                 </div>
             </nav>
-
         </div>
     </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__title">
+                        <p>Find the best <p class="color">talent</p></p>
+                    </div>
+                    <div class="hero__text">
+                        <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="team__wrapper">
+                    <div class="team__title">
+                        <p>Build & manage distributed teams like no one else.</p>
+                    </div>
+                    <div class="team__collection">
+                        <div class="team__item">
+                            <img src="./assets/Group 11.svg" alt="">
+                            <div class="text">
+                                <p class="pink">Experienced Individuals</p>
+                                <p>Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <img src="./assets/Group 12.svg" alt="">
+                            <div class="text">
+                                <p class="pink">Easy to Implement</p>
+                                <p>Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <img src="./assets/Group 13.svg" alt="">
+                            <div class="text">
+                                <p class="pink">Enhanced Productivity</p>
+                                <p>Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories">
+            <div class="container">
+                <div class="stories__title">
+                    <p>Delivering real results for top companies. Some of our <p class="green">success stories</p>.</p>
+                </div>
+                <div class="stories__wrapper">
+                    <div class="stories__item">
+                        <img src="./assets/“.svg" alt="">
+                        <div class="text">
+                            <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
+                            <p class="green">Kady Baker</p>
+                            <i>Product Manager at Bookmark</i>
+                            <img class="image" src="./assets/Oval@2x.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stories__item">
+                        <img src="./assets/“.svg" alt="">
+                        <div class="text">
+                            <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
+                            <p class="green">Kady Baker</p>
+                            <i>Product Manager at Bookmark</i>
+                            <img class="image" src="./assets/Oval Copy 5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stories__item">
+                        <img src="./assets/“.svg" alt="">
+                        <div class="text">
+                            <p> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
+                            <p class="green">Kady Baker</p>
+                            <i>Product Manager at Bookmark</i>
+                            <img class="image" src="./assets/Oval Copy 6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="end">
+            <div class="container">
+                <div class="end__title">
+                    <p>Ready to get started?</p>
+                    <button>contact us</button>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
     
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__wrapper">
+                    <div class="footer__title">
+                        <h3>myteam</h3>
+                        <div class="context">
+                            <p>home</p>
+                            <p>about</p>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <p>987  Hillcrest Lane Irvine, CA California 92714 Call Us : 949-833-7432</p>
+                    </div>
+                </div>
+                <div class="icon__wrapper">
+                    <div class="icon">
+                        <img src="./assets/Path (1).svg" alt="">
+                        <img src="./assets/Path (2).png" alt="">
+                        <img src="./assets/Path.svg" alt="">
+                    </div>
+                    <p>Copyright 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="./js/app.js"></script>

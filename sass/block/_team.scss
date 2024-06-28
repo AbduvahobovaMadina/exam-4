@@ -1,0 +1,77 @@
+.team{
+    background: rgb(1, 47, 52);
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        padding-top: 160px;
+        padding-bottom: 80px;
+        gap: 140px;
+        @media (max-width:950px) {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+    }
+    &__title{
+        width: 40%;
+        @media (max-width:950px) {
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            color: $bg-light;
+        }   
+        &::before{
+            content: " ";
+            display: inline-block;
+            width: 50px;
+            height: 4px;
+            margin-bottom: 40px;
+            background: $bg-pink;
+        }
+    }
+    &__collection{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 50%;
+        @media (max-width:950px) {
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        @media (max-width:500px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        img{
+            width: 72px;
+            height: 72px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: rgba(255,255,255,1);
+            font-size: 14px;
+        }
+       
+        .pink{
+            color: $bg-pink;
+        }
+    }
+}
