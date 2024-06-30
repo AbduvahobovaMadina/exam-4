@@ -44,13 +44,13 @@
             
             @media (max-width:650px) {
                 display: flex;
-                position: fixed;
+                position:sticky;
                 align-items: center;
                 justify-content: flex-start;
                 top: 0;
                 right: -350px;
                 width: 250px;
-                height: 600px;
+                height: 100%;
                 padding: 30px ;
                 background: $bg-py ;
                 box-shadow: -10px 0 10px rgba(0, 0, 0, 0.56);

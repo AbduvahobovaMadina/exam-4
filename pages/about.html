@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>about</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/main.min.css">
 </head>
@@ -14,9 +15,9 @@
                 <h3>myteam</h3>
                 <ul class="navbar__collection">
                     <i onclick="toggleShow()" class="fa-solid fa-xmark"></i>
-                    <li><a target="_blank" href="#"><p>home</p></a></li>
-                    <li><a target="_blank" href="#"><p>about</p></a></li>
-                    <li><button><a href="../pages/about.html">contact us</a></button></li>
+                    <li><a href="../index.html"><p>home</p></a></li>
+                    <li><a href="#"><p>about</p></a></li>
+                    <li><button><a href="../pages/contact.html">contact us</a></button></li>
                 </ul>
                 <div onclick="toggleShow()" class="navbar__menu">
                     <span></span>
@@ -26,58 +27,85 @@
             </nav>
         </div>
     </header>
+
+
     <main>
-        <section class="contact">
+        <section class="hero">
             <div class="container">
-                <div class="contact__wrapper">
-                    <h2>
-                        contact
-                    </h2>
-                    <p>Ask us about</p>
-                    <div class="contact__content">
-                        <div class="contact__collection">
-                            <div class="contact__item">
-                                <img src="../assets/Group 11.svg" alt="">
-                                <p>The quality of our talent network</p>
+                <div class="hero__wrapper">
+                    <div class="hero__title">
+                        <p>About</p>
+                    </div>
+                    <div class=" text">
+                        <p>We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="directors">
+            <div class="container">
+                <p>Meet the directors</p>
+                <div class="directors__wrapper">
+                    <div class="directors__card">
+                        <img src="../assets/Oval.png" alt="">
+                        <p>Nikita Marks</p>
+                        <i>Founder & CEO</i>
+                    </div>
+                    <div class="directors__card">
+                        <img src="../assets/Oval (1).png" alt="">
+                        <p>Cristian Duncan</p>
+                        <i>Co-founder & COO</i>
+                    </div>
+                    <div class="directors__card">
+                        <img src="../assets/Oval (2).png" alt="">
+                        <p>Cruz Hamer</p>
+                        <i>Co-founder & COO</i>
+                    </div>
+                    <div class="directors__card">
+                        <img src="../assets/Oval (3).png" alt="">
+                        <p>Drake Heaton</p>
+                        <i>Business Development Lead</i>
+                    </div>
+                    <div class="directors__card">
+                        <img src="../assets/Oval (4).png" alt="">
+                        <p>Griffin Wise</p>
+                        <i>Lead Marketing</i>
+                    </div>
+                    <div class="directors__about">
+                        <p>Aden Allan</p>
+                        <i>“Empowered teams create truly amazing products. Set the north star and let them follow it.”</i>
+                        <div class="icons">
+                            <img class="icon" src="../assets/Path (1).svg" alt="">
+                            <img class="icon" src="../assets/004-linkedin-logo.svg" alt="">
+                            <div class="exit">
+                                <i  class="fa-solid fa-xmark"></i>
                             </div>
-                            <div class="contact__item">
-                                <img src="../assets/Group 12.svg" alt="">
-                                <p>Usage & implementation of our software</p>
-                            </div>
-                            <div class="contact__item">
-                                <img src="../assets/Group 13.svg" alt="">
-                                <p>How we help drive innovation</p>
-                            </div>
-                        </div>
-                        <div class="contact__about">
-                            <div class="inp">
-                                <input type="text" placeholder="name">
-                                <hr>
-                            </div>
-                            <div class="inp">
-                                <input type="email" placeholder="Email Address">
-                                <hr>
-                            </div>
-                            <div class="inp">
-                                <input type="text" placeholder="Company Name">
-                                <hr>
-                            </div>
-                            <div class="inp">
-                                <input type="text" placeholder="Title">
-                                <hr>
-                            </div>
-                            <div class="inp">
-                                <input type="text" placeholder="Message">
-                                <hr>
-                            </div>
-                            <button>Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="client">
+            <div class="container">
+                <div class="client__wrapper">
+                    <img src="../assets/Object.svg" alt="">
+                    <img src="../assets/Object (1).svg" alt="">
+                    <img src="../assets/Object (2).svg" alt="">
+                    <img src="../assets/jakarta.svg" alt="">
+                    <img src="../assets/gadgets-now.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="end">
+            <div class="container">
+                <div class="end__title">
+                    <p>Ready to get started?</p>
+                    <button>contact us</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -105,6 +133,8 @@
             </div>
         </div>
     </footer>
+
+    
 
 
     <script src="../js/app.js"></script>
