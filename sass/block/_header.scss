@@ -21,6 +21,7 @@
             flex: 1;
             display: flex;
             color: $bg-light;
+            z-index: 1;
             gap: 40px;
             align-items: center;
             li{
